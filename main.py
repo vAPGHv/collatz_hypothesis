@@ -1,8 +1,8 @@
 while True:
     try:
-        x = int(input("Введите любое НЕ ДРОБНОЕ число: "))
+        x = int(input("Enter any natural number: "))
     except:
-        print("Вы ввели не дробное число (или вообще не число)!")
+        print("You enter is dont natural number!")
     o = 0
 
     while x != 1:
@@ -15,4 +15,4 @@ while True:
             x=x*3+1
         print(int(x))
     
-    print(f"\nОпераций {o}\n\n\n\n")
+    print(f"\n{o} operations!\n\n\n\n")
