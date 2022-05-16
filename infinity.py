@@ -1,12 +1,12 @@
 try:
-        start = int(input("Введите любое НЕ ДРОБНОЕ число (старт отсчета) (не меньше 1): "))
-        finish = int(input("Введите любое НЕ ДРОБНОЕ число (конец отсчета) (не меньше старта): "))
+        start = int(input("Enter any natural number (start): "))
+        finish = int(input("Enter any natural number (end): "))
         if start < 1:
             start = 1
         if finish <= start:
             finish=start+1
 except:
-    print("Вы ввели не дробное число (или вообще не число)!")
+    print("You enter is dont natural number!")
 
 for i in range(start, finish+1):
     x = i
@@ -21,4 +21,4 @@ for i in range(start, finish+1):
         else:
             x=x*3+1
     
-    print(f"\nУ числа {i}: {o} операций!\n\n\n\n")
+    print(f"\nNumber {i} has {o} operations!\n\n\n\n")
